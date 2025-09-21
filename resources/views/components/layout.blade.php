@@ -14,21 +14,14 @@
     <nav>
       <ul class="flex space-x-8 text-purple-700 font-medium">
         <li><x-nav-link href="/" :active="request()->is('/')" >Home</x-nav-link></li>
-        <li><x-nav-link href="/about" :active="request()->is('about')" >About</x-nav-link></li>
-        <li><x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link></li>
+        <li><x-nav-link href="/jobs" :active="request()->is('about')" >Jobs</x-nav-link></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <main class="flex flex-1 flex-col items-center justify-center text-center px-6">
-    <h2 class="text-5xl font-extrabold text-purple-900 mb-4">{{ $heading }}</h2>
-    <p class="text-lg text-purple-700 max-w-xl mb-8">
+  <main class="w-5/6 mx-auto my-5">
       {{ $slot }}
-    </p>
-    <a href="#about" class="px-6 py-3 bg-purple-700 text-white rounded-full shadow-md hover:bg-purple-800 transition">
-      Get Started
-    </a>
   </main>
 
   <!-- Footer -->
