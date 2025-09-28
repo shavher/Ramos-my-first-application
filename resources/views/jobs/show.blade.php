@@ -1,6 +1,16 @@
 <x-layout>
-<section aria-label="Job details">
-    <div class="glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+<div class = " flex justify-end ">
+    <a href = "/jobs/{{ $job['id'] }}/edit">
+        <button id="openCreateBtn" class="inline-flex items-center w-[120px]  gap-2 px-4 py-2 bg-purple-700 text-white rounded-full shadow hover:bg-purple-800 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
+            </svg>
+            Edit Job
+        </button>
+    </a>
+</div>
+<section aria-label="Job details mt-5 ">
+    <div class="glass rounded-2xl p-8  shadow-fuchsia-700 hover:shadow-xl transition ">
     <!-- Top row: employer + title / salary + tags -->
         <div class="grid grid-cols-[1fr_auto] gap-6 items-start">
             <div>
@@ -22,15 +32,11 @@
     <div class="text-gray-700 leading-relaxed space-y-4">
         <p>
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Consectetur, adipisci velit, sed quia non numquam eius modi tempora.
-
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minima veniam, quis nostrum exercitationem ullam. Ut enim ad minima veniam, quis nostrum exercitationem ullam.
         </p>
         <p>
         <strong>Qualifications:</strong>
         <ul class="list-disc list-inside mt-2 text-gray-600">
             <li>2+ years of experience in frontend development</li>
-            <li>Strong knowledge of React and TypeScript</li>
-            <li>Experience with REST APIs and Git</li>
             <li>Excellent communication skills</li>
         </ul>
         </p>

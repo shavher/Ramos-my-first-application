@@ -18,9 +18,9 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Hero Section -->
+  
   <main class="w-5/6 mx-auto my-5">
+  
       {{ $slot }}
   </main>
 
