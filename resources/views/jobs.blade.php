@@ -12,7 +12,7 @@
                 <div class="text-right flex flex-col items-end gap-2">
                     <p class="text-sm font-medium text-purple-800">{{ $job['salary'] }} <div class="px-4 py-4">
                     @foreach($job->tags as $tag)
-                        <span class="bg-gray-200 text-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5
+                        <span class="bg-gray-200 text-gray-700 text-s font-semibold mr-2 px-2.5 py-0.5
                         rounded-full">{{ $tag->name }}</span>
                     @endforeach
                     </div>
@@ -21,5 +21,8 @@
         </li>
     @endforeach
     </ul>
+    <div class="mt-6">
+        {{ $jobs->links() }}
+    </div>
 </section>
 </x-layout>
